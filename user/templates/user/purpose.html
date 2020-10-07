@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/p.css' %}">
+
+    <div>
+        <form>
+            <h1>What is the purpose of developing the bussiness model?</h1>
+            <input type="checkbox" id="bank loan" name="bank loan" style="font-size: 22px;"><label for="bank loan" style="font-size: 22px;">Looking for bank loan</label><br/>
+            <input type="checkbox" id="investment" name="investment" style="font-size: 22px;"><label for="investment" style="font-size: 22px;">Looking for investment</label><br/>
+            <input type="checkbox" id="idea" name="idea" style="font-size: 22px;"><label for="idea" style="font-size: 22px;">Evaluate an idea</label><br/><br/>
+            <button type="button" onclick="location.href='{% url 'index' %}'" style="margin:15px;">Back</button>
+            <button type="button" onclick="location.href='{% url 'activity' %}'">Next</button>
+        </form>
+    </div>
+
+

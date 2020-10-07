@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+
+<div>
+<h1>Which phase is your bussiness in?</h1>
+<form>
+
+    <input type="radio" onclick="location.href='{% url 'purpose' %}'" name = "ans" value="new bussiness" style="font-size:25px;"/><label style="font-size: 25px;">New Business</label></br>
+    <p>Business in idea stage or less than  1 year</p>
+
+    <input type="radio" onclick="location.href='{% url 'purpose' %}'" name = "ans" value="new bussiness" style="font-size:25px;"/><label style="font-size: 25px;">Growing Bussiness</label></br>
+    <p>Any business that has been running for more than 1 year</p>
+
+    <input type="radio" onclick="location.href='{% url 'purpose' %}'" name = "ans" value="new bussiness" style="font-size:25px;"/><label style="font-size: 25px;">Established Business</label></br>
+    <p>A full-fledged bussiness</p>
+
+</form>
+
+
+</div>
+
